@@ -2,7 +2,7 @@ name: Controlla UST Brescia
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Esegue ogni 2 ore
+    - cron: '*/5 * * * *' # Esegue ogni 5 minuti
   workflow_dispatch:      # Permette di avviarlo manualmente da GitHub
 
 jobs:
