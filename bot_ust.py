@@ -3,9 +3,9 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-# INSERISCI QUI I TUOI DATI
-BOT_TOKEN = "8886900020:AAHendxWaPTaf2gT_IXDS94nQyNaUct0xo4"
-CHAT_ID = "621508022"
+# Legge i dati dai Secret di Github in modo sicuro
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 URL_SITO = "https://www.mim.gov.it/web/brescia"
 FILE_MEMORIA = "viste.json"
